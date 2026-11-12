@@ -1,11 +1,16 @@
 {
-    "versionCode":  28,
-    "versionName":  "0.18.0-beta",
+    "versionCode":  29,
+    "versionName":  "0.19.0-beta",
     "sizeMb":  3.8,
     "notes":  [
-                  "Full game for everyone: all quests, ranks, levels, challenges and the top 100 are open, no invite needed",
-                  "2x boost: lucky chests give 1 hour of double RP and XP (Legendary 20%, Epic 10%, Rare 5%, Common 2%)",
-                  "Invite rewards: for every friend who joins with your code you get +100 RP and a 24h 2x boost, and your friend gets a 24h boost too",
-                  "The download link now comes from the server, so updates always lead to the right place"
+                  "Chests give bonus items more often: RP pouch, Quest reroll, Streak Restore or a rare 2x boost. Better chests, better items",
+                  "2x boost now comes only from chests (30 min to 2 h) and waits on Home: activate it within 24 hours when you\u0027re about to walk",
+                  "Reroll a daily quest you don\u0027t like: once a day free, more with Quest rerolls from chests",
+                  "Finish all 3 quests for a bonus: +30 RP a day, +100 RP a week",
+                  "New any-time quests: Power hour and Active hours. No more \"before 10:00\" deadlines",
+                  "Quests get harder at higher ranks and pay more RP; goal quests and streak rewards grow with your daily goal",
+                  "A ranked challenge you missed just expires, no RP lost. Only a started challenge you don\u0027t finish costs RP",
+                  "Invites give RP: +100 for you, +50 for your friend",
+                  "Fixed progress sometimes being undone after the tutorial or a settings change"
               ]
 }
