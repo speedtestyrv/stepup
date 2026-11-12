@@ -1,9 +1,10 @@
 {
-    "versionCode":  26,
-    "versionName":  "0.16.1-beta",
+    "versionCode":  27,
+    "versionName":  "0.17.0-beta",
     "sizeMb":  3.8,
     "notes":  [
-                  "All avatar frames polished: smooth edges, no more white pixels around the frame or the photo",
-                  "Cleaner dark rim around your avatar"
+                  "Double rank points: quests, challenges, chests, streak gifts and duel wins now give 2x RP. Climbing ranks is much faster",
+                  "Updates now come from our own download page, with the newest version always there",
+                  "New app icon: smaller and cleaner, the diamond is no longer cut off"
               ]
 }
