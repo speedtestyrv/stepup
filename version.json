@@ -1,0 +1,9 @@
+{
+    "versionCode":  26,
+    "versionName":  "0.16.1-beta",
+    "sizeMb":  3.8,
+    "notes":  [
+                  "All avatar frames polished: smooth edges, no more white pixels around the frame or the photo",
+                  "Cleaner dark rim around your avatar"
+              ]
+}

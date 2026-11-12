@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StepUp Download</title>
+<meta name="description" content="Download the latest StepUp for Android: the step competition app.">
+<link rel="icon" href="icon.png">
+<meta property="og:title" content="StepUp – the step competition app">
+<meta property="og:description" content="Walk, climb the ranks, beat your friends. Download the latest version for Android.">
+<meta property="og:image" content="icon.png">
+<style>
+  :root {
+    --bg: #07121f; --card: #0f1f33; --line: #1c3350; --text: #eaf6fb; --muted: #8fa7bd;
+    --aqua: #3cc8da; --teal: #37aabd; --green: #3be48b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; color: var(--text); background: var(--bg);
+    background-image: radial-gradient(60rem 40rem at 50% -10rem, #12405a 0%, transparent 60%);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 480px; margin: 0 auto; padding: 48px 16px 40px; }
+  .hero { text-align: center; }
+  .hero img { width: 112px; height: 112px; border-radius: 28px; box-shadow: 0 12px 48px #3cc8da55; }
+  h1 { margin: 20px 0 4px; font-size: 32px; letter-spacing: -0.5px; }
+  .tag { color: var(--muted); margin: 0; }
+  .ver { display: inline-block; margin-top: 14px; padding: 4px 12px; border-radius: 99px;
+         background: #3cc8da1f; color: var(--aqua); font-size: 13px; font-weight: 600; }
+  .btn { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 28px 0 8px;
+         height: 60px; border-radius: 18px; background: var(--aqua); color: #04222b; text-decoration: none;
+         font-size: 18px; font-weight: 700; box-shadow: 0 8px 32px #3cc8da40; }
+  .btn:active { transform: scale(.98); }
+  .btn svg { width: 22px; height: 22px; }
+  .small { text-align: center; color: var(--muted); font-size: 13px; margin: 0; }
+  section { margin-top: 28px; padding: 20px; border-radius: 20px; background: var(--card); border: 1px solid var(--line); }
+  h2 { margin: 0 0 12px; font-size: 18px; }
+  ul, ol { margin: 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  #notes li::marker { content: "✨ "; }
+  .update { border-color: #3be48b55; }
+  .update h2 { color: var(--green); }
+  footer { margin-top: 28px; text-align: center; font-size: 14px; color: var(--muted); }
+  footer a { color: var(--aqua); }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <img src="icon.png" alt="StepUp icon">
+    <h1>StepUp</h1>
+    <p class="tag">Walk, climb the ranks, beat your friends.</p>
+    <span class="ver" id="ver">Android · Beta</span>
+  </div>
+
+  <a class="btn" id="dl" href="#">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+    <span id="dltext">Download StepUp</span>
+  </a>
+  <p class="small">Android 9 or newer · <span id="size">about 4 MB</span></p>
+
+  <section class="update">
+    <h2>🔄 Updating</h2>
+    <p style="margin:0">Download the file above and install it over your old StepUp. Your progress is saved on your account, nothing is lost.</p>
+  </section>
+
+  <section id="notes-box" hidden>
+    <h2 id="notes-title">What's new</h2>
+    <ul id="notes"></ul>
+  </section>
+
+  <section>
+    <h2>📲 First install</h2>
+    <ol>
+      <li>Tap <b>Download StepUp</b> and open the file.</li>
+      <li>If asked, allow installing apps from your browser.</li>
+      <li>Google Play Protect may say "App scan recommended": tap <b>Scan app</b> or <b>Install without scanning</b>. It's safe, the app is just new to Google.</li>
+      <li>Tap <b>Install</b>, open StepUp and create an account (one account per phone).</li>
+      <li>Allow steps (Health Connect), physical activity and notifications.</li>
+    </ol>
+  </section>
+
+  <footer>
+    News and chat: <a href="https://t.me/stepup_app">Telegram channel</a>
+  </footer>
+</main>
+<script>
+  // owner.github.io/repo/ → the APK attached to the newest GitHub release of owner/repo.
+  const owner = location.hostname.split('.')[0];
+  const repo = location.pathname.split('/').filter(Boolean)[0] || 'stepup';
+  document.getElementById('dl').href = `https://github.com/${owner}/${repo}/releases/latest/download/StepUp.apk`;
+
+  fetch('version.json', { cache: 'no-store' }).then(r => r.json()).then(v => {
+    document.getElementById('ver').textContent = `Version ${v.versionName} · Android`;
+    document.getElementById('dltext').textContent = `Download StepUp ${v.versionName}`;
+    if (v.sizeMb) document.getElementById('size').textContent = `${v.sizeMb} MB`;
+    if (Array.isArray(v.notes) && v.notes.length) {
+      document.getElementById('notes-title').textContent = `What's new in ${v.versionName}`;
+      const ul = document.getElementById('notes');
+      v.notes.forEach(n => { const li = document.createElement('li'); li.textContent = n; ul.appendChild(li); });
+      document.getElementById('notes-box').hidden = false;
+    }
+  }).catch(() => {});
+</script>
+</body>
+</html>
