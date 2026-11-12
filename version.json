@@ -1,10 +1,11 @@
 {
-    "versionCode":  27,
-    "versionName":  "0.17.0-beta",
+    "versionCode":  28,
+    "versionName":  "0.18.0-beta",
     "sizeMb":  3.8,
     "notes":  [
-                  "Double rank points: quests, challenges, chests, streak gifts and duel wins now give 2x RP. Climbing ranks is much faster",
-                  "Updates now come from our own download page, with the newest version always there",
-                  "New app icon: smaller and cleaner, the diamond is no longer cut off"
+                  "Full game for everyone: all quests, ranks, levels, challenges and the top 100 are open, no invite needed",
+                  "2x boost: lucky chests give 1 hour of double RP and XP (Legendary 20%, Epic 10%, Rare 5%, Common 2%)",
+                  "Invite rewards: for every friend who joins with your code you get +100 RP and a 24h 2x boost, and your friend gets a 24h boost too",
+                  "The download link now comes from the server, so updates always lead to the right place"
               ]
 }
