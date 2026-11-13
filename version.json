@@ -1,16 +1,20 @@
 {
-    "versionCode":  29,
-    "versionName":  "0.19.0-beta",
-    "sizeMb":  3.8,
+    "versionCode":  30,
+    "versionName":  "0.19.1-beta",
+    "sizeMb":  4,
     "notes":  [
-                  "Chests give bonus items more often: RP pouch, Quest reroll, Streak Restore or a rare 2x boost. Better chests, better items",
-                  "2x boost now comes only from chests (30 min to 2 h) and waits on Home: activate it within 24 hours when you\u0027re about to walk",
-                  "Reroll a daily quest you don\u0027t like: once a day free, more with Quest rerolls from chests",
-                  "Finish all 3 quests for a bonus: +30 RP a day, +100 RP a week",
-                  "New any-time quests: Power hour and Active hours. No more \"before 10:00\" deadlines",
-                  "Quests get harder at higher ranks and pay more RP; goal quests and streak rewards grow with your daily goal",
-                  "A ranked challenge you missed just expires, no RP lost. Only a started challenge you don\u0027t finish costs RP",
-                  "Invites give RP: +100 for you, +50 for your friend",
-                  "Fixed progress sometimes being undone after the tutorial or a settings change"
+                  "A chest for every 10,000 steps: 1st Common, 2nd Rare, 3rd Epic, 4th and every next one Legendary",
+                  "Inventory: keep up to 50 chests and open them one by one or all at once, plus your boosts and items",
+                  "Leaderboards for Today, This week and the Season, with bars as tall as the real steps and your lead in %",
+                  "Tap a player to compare: exact numbers, lead over the next place and their curve next to yours",
+                  "Team challenge: up to 5 friends, one daily goal, a Rare chest each when you make it",
+                  "Weekly plan with a goal for each day, plan reminders, and a walk planner with pauses and the pace to keep",
+                  "Live pace under the ring and when you reach today\u0027s goal",
+                  "Rest and water reminders while walking",
+                  "Personal records, a monthly report to share, and crown time and crown history for #1 players",
+                  "The chest that opens is always the one shown on Home",
+                  "Started quests never change: a new goal or rank counts from the next day or week, and quests grow step by step",
+                  "Fixes around midnight, time zones and days the app couldn\u0027t read",
+                  "Invite codes removed"
               ]
 }
