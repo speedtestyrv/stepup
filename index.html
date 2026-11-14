@@ -62,6 +62,7 @@
   <section class="update">
     <h2>🔄 Updating</h2>
     <p style="margin:0">Download the file above and install it over your old StepUp. Your progress is saved on your account, nothing is lost.</p>
+    <p style="margin:8px 0 0">Open the file whose name has the newest version (for example <b>StepUp-0.19.2-beta.apk</b>). Old StepUp files in your Downloads folder can be deleted.</p>
   </section>
 
   <section id="notes-box" hidden>
@@ -93,6 +94,8 @@
   fetch('version.json', { cache: 'no-store' }).then(r => r.json()).then(v => {
     document.getElementById('ver').textContent = `Version ${v.versionName} · Android`;
     document.getElementById('dltext').textContent = `Download StepUp ${v.versionName}`;
+    // The file carries its version in the name, so an old StepUp.apk in Downloads is never opened by mistake.
+    document.getElementById('dl').href = `https://github.com/${owner}/${repo}/releases/download/v${v.versionName}/StepUp-${v.versionName}.apk`;
     if (v.sizeMb) document.getElementById('size').textContent = `${v.sizeMb} MB`;
     if (Array.isArray(v.notes) && v.notes.length) {
       document.getElementById('notes-title').textContent = `What's new in ${v.versionName}`;
