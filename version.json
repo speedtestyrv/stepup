@@ -1,20 +1,13 @@
 {
-    "versionCode":  30,
-    "versionName":  "0.19.1-beta",
-    "sizeMb":  4,
+    "versionCode":  31,
+    "versionName":  "0.20.0-beta",
+    "sizeMb":  4.5,
     "notes":  [
-                  "A chest for every 10,000 steps: 1st Common, 2nd Rare, 3rd Epic, 4th and every next one Legendary",
-                  "Inventory: keep up to 50 chests and open them one by one or all at once, plus your boosts and items",
-                  "Leaderboards for Today, This week and the Season, with bars as tall as the real steps and your lead in %",
-                  "Tap a player to compare: exact numbers, lead over the next place and their curve next to yours",
-                  "Team challenge: up to 5 friends, one daily goal, a Rare chest each when you make it",
-                  "Weekly plan with a goal for each day, plan reminders, and a walk planner with pauses and the pace to keep",
-                  "Live pace under the ring and when you reach today\u0027s goal",
-                  "Rest and water reminders while walking",
-                  "Personal records, a monthly report to share, and crown time and crown history for #1 players",
-                  "The chest that opens is always the one shown on Home",
-                  "Started quests never change: a new goal or rank counts from the next day or week, and quests grow step by step",
-                  "Fixes around midnight, time zones and days the app couldn\u0027t read",
-                  "Invite codes removed"
+                  "New chest opening: the chest shakes, a reel of rewards spins and slows down on what you won, then the chest bursts open",
+                  "See what\u0027s inside: Inventory → \"What\u0027s inside each chest?\" shows every reward with its chance",
+                  "New chest art (closed and open) and new reward icons",
+                  "New rank emblems",
+                  "Team challenge redone as its own screen: how it works in 3 steps, everyone\u0027s share of the goal in their own colour, who gets the chest, open seats to invite, and the last 7 days",
+                  "Quiet, soft sounds for the chest reel and opening (turn them off in Settings → Sound effects)"
               ]
 }
