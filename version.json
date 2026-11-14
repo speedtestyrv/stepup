@@ -1,9 +1,13 @@
 {
-    "versionCode":  32,
-    "versionName":  "0.19.2-beta",
-    "sizeMb":  3.9,
+    "versionCode":  33,
+    "versionName":  "0.20.1-beta",
+    "sizeMb":  4.5,
     "notes":  [
-                  "Back to the previous version (0.19.1): the chest art, chest opening, rank emblems and team screen are as they were before 0.20.0",
-                  "Your progress, chests and teams stay"
+                  "New chest opening: the chest shakes, a reel of rewards spins and slows down on what you won, then the chest bursts open",
+                  "See what\u0027s inside: Inventory → \"What\u0027s inside each chest?\" shows every reward with its chance",
+                  "New chest art (closed and open) and new reward icons",
+                  "New rank emblems",
+                  "Team challenge has its own screen: how it works in 3 steps, everyone\u0027s share of the goal in their own colour, who gets the chest, open seats to invite, and the last 7 days",
+                  "Quiet, soft sounds for the chest reel and opening (turn them off in Settings → Sound effects)"
               ]
 }
