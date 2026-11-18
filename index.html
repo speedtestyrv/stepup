@@ -2,109 +2,195 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>StepUp Download</title>
-<meta name="description" content="Download the latest StepUp for Android: the step competition app.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#07121f">
+<title>StepUp – walk, climb the ranks, win with your clan</title>
+<meta name="description" content="StepUp turns your daily steps into a game: 10 ranks, chests, clans, duels and seasons. Download the latest version for Android.">
 <link rel="icon" href="icon.png">
-<meta property="og:title" content="StepUp – the step competition app">
-<meta property="og:description" content="Walk, climb the ranks, beat your friends. Download the latest version for Android.">
+<link rel="apple-touch-icon" href="icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="StepUp – every step counts">
+<meta property="og:description" content="Ranks, chests, clans and duels for your daily walk. Free for Android.">
 <meta property="og:image" content="icon.png">
-<style>
-  :root {
-    --bg: #07121f; --card: #0f1f33; --line: #1c3350; --text: #eaf6fb; --muted: #8fa7bd;
-    --aqua: #3cc8da; --teal: #37aabd; --green: #3be48b;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; min-height: 100vh; color: var(--text); background: var(--bg);
-    background-image: radial-gradient(60rem 40rem at 50% -10rem, #12405a 0%, transparent 60%);
-    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  main { max-width: 480px; margin: 0 auto; padding: 48px 16px 40px; }
-  .hero { text-align: center; }
-  .hero img { width: 112px; height: 112px; border-radius: 28px; box-shadow: 0 12px 48px #3cc8da55; }
-  h1 { margin: 20px 0 4px; font-size: 32px; letter-spacing: -0.5px; }
-  .tag { color: var(--muted); margin: 0; }
-  .ver { display: inline-block; margin-top: 14px; padding: 4px 12px; border-radius: 99px;
-         background: #3cc8da1f; color: var(--aqua); font-size: 13px; font-weight: 600; }
-  .btn { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 28px 0 8px;
-         min-height: 60px; padding: 10px 18px; text-align: center; border-radius: 18px; background: var(--aqua); color: #04222b; text-decoration: none;
-         font-size: 18px; font-weight: 700; box-shadow: 0 8px 32px #3cc8da40; }
-  .btn:active { transform: scale(.98); }
-  .btn svg { width: 22px; height: 22px; }
-  .small { text-align: center; color: var(--muted); font-size: 13px; margin: 0; }
-  section { margin-top: 28px; padding: 20px; border-radius: 20px; background: var(--card); border: 1px solid var(--line); }
-  h2 { margin: 0 0 12px; font-size: 18px; }
-  ul, ol { margin: 0; padding-left: 22px; }
-  li { margin: 6px 0; }
-  #notes li::marker { content: "✨ "; }
-  .update { border-color: #3be48b55; }
-  .update h2 { color: var(--green); }
-  footer { margin-top: 28px; text-align: center; font-size: 14px; color: var(--muted); }
-  footer a { color: var(--aqua); }
-</style>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
 </head>
 <body>
-<main>
-  <div class="hero">
-    <img src="icon.png" alt="StepUp icon">
-    <h1>StepUp</h1>
-    <p class="tag">Walk, climb the ranks, beat your friends.</p>
-    <span class="ver" id="ver">Android · Beta</span>
-  </div>
+<div class="bg" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="grid"></span></div>
 
-  <a class="btn" id="dl" href="#">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
-    <span id="dltext">Download StepUp</span>
-  </a>
-  <p class="small">Android 9 or newer · <span id="size">about 4 MB</span></p>
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="StepUp home"><img src="img/ic_launcher_art.webp" alt="" width="32" height="32"><span>StepUp</span></a>
+  <nav class="links" aria-label="Sections">
+    <a href="#features">Features</a><a href="#clans">Clans</a><a href="#ranks">Ranks</a><a href="#install">Install</a>
+  </nav>
+  <a class="btn btn-sm dl" href="#install">Download</a>
+</header>
 
-  <section class="update">
-    <h2>🔄 Updating</h2>
-    <p style="margin:0">Download the file above and install it over your old StepUp. Your progress is saved on your account, nothing is lost.</p>
-    <p style="margin:8px 0 0">Open the file whose name has the newest version (for example <b>StepUp-0.19.2-beta.apk</b>). Old StepUp files in your Downloads folder can be deleted.</p>
-    <p style="margin:8px 0 0"><b>Still the old version, or "App not installed"?</b> Your phone has a very old StepUp (1.5 or older, signed differently) that newer versions can't replace. Uninstall StepUp (hold its icon → Uninstall), then install the file again and sign in: your progress is saved on your account.</p>
+<main id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <span class="eyebrow reveal"><span class="dot"></span><span id="ver">Android · Beta</span></span>
+      <h1 class="reveal">Every step<br>counts. <span class="grad">Climb.</span></h1>
+      <p class="lead reveal">StepUp turns your daily walk into a season-long game: ten ranks, chests to open, clans to build and friends to beat.</p>
+      <div class="cta reveal">
+        <a class="btn btn-lg dl" href="#install">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+          <span class="dltext">Download for Android</span>
+        </a>
+        <span class="meta"><span class="size">Android 9+ · about 5 MB</span> · Free · No ads</span>
+      </div>
+      <ul class="trust reveal" aria-label="Safety">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>Signed by StepUp</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Checksum published</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>No tracking on this site</li>
+      </ul>
+    </div>
+
+    <div class="hero-art reveal">
+      <img class="float f1" src="img/rank_7.webp" alt="" width="96" height="96">
+      <img class="float f2" src="img/chest_legendary.webp" alt="" width="110" height="110">
+      <img class="float f3" src="img/clan_emblem_4.webp" alt="" width="76" height="76">
+      <div class="phone" role="img" aria-label="The StepUp home screen with today's step ring">
+        <div class="notch"></div>
+        <div class="screen">
+          <div class="s-top"><span>Today</span><span class="chip">🔥 12</span></div>
+          <div class="ring">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5ad6e8"/><stop offset="1" stop-color="#9db2ff"/></linearGradient></defs>
+              <circle cx="60" cy="60" r="50" class="track"/>
+              <circle cx="60" cy="60" r="50" class="fill" id="ringfill"/>
+            </svg>
+            <div class="ring-num"><b id="steps">0</b><small>of 15,000</small></div>
+          </div>
+          <div class="s-row">
+            <div class="s-card"><small>Rank</small><b>Diamond II</b></div>
+            <div class="s-card"><small>Level</small><b>24</b></div>
+          </div>
+          <div class="s-chest"><img src="img/chest_rare.webp" alt="" width="40" height="40"><div><b>Rare chest</b><small id="next">7,520 steps to go</small></div></div>
+          <div class="s-clan"><img src="img/clan_emblem_4.webp" alt="" width="28" height="28"><div class="bar"><span id="clanbar"></span></div></div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="notes-box" hidden>
-    <h2 id="notes-title">What's new</h2>
-    <ul id="notes"></ul>
+  <!-- Numbers -->
+  <section class="stats" aria-label="StepUp in numbers">
+    <div class="stat reveal"><b data-count="10">0</b><span>ranks from Iron to Legend</span></div>
+    <div class="stat reveal"><b data-count="4">0</b><span>chest tiers to open</span></div>
+    <div class="stat reveal"><b data-count="10">0</b><span>players per clan</span></div>
+    <div class="stat reveal"><b data-count="30">0</b><span>day seasons</span></div>
   </section>
 
-  <section>
-    <h2>📲 First install</h2>
-    <ol>
-      <li>Tap <b>Download StepUp</b> and open the file.</li>
-      <li>If asked, allow installing apps from your browser.</li>
-      <li>Google Play Protect may say "App scan recommended": tap <b>Scan app</b> or <b>Install without scanning</b>. It's safe, the app is just new to Google.</li>
-      <li>Tap <b>Install</b>, open StepUp and create an account (one account per phone).</li>
-      <li>Allow steps (Health Connect), physical activity and notifications.</li>
-    </ol>
+  <!-- Features -->
+  <section class="block" id="features">
+    <h2 class="reveal">Built to keep you walking</h2>
+    <p class="sub reveal">Real steps from Health Connect and Google Fit. Real rivals. A reason to take the long way home.</p>
+    <div class="cards">
+      <article class="card reveal"><div class="art"><img src="img/rank_4.webp" alt="" width="64" height="64"><img src="img/rank_8.webp" alt="" width="64" height="64"></div><h3>Ranked challenges</h3><p>Pick a walk, beat the clock, earn rank points. Ten tiers, each harder than the last.</p></article>
+      <article class="card reveal"><div class="art"><img src="img/chest_common.webp" alt="" width="64" height="64"><img src="img/chest_epic.webp" alt="" width="64" height="64"></div><h3>Chests every 10,000 steps</h3><p>Open them with a spin: XP, rank points, 2x boosts, rerolls and streak restores.</p></article>
+      <article class="card reveal"><div class="art"><img src="img/clan_emblem_9.webp" alt="" width="64" height="64"><img src="img/clan_vault.webp" alt="" width="64" height="64"></div><h3>Clans with a vault</h3><p>Walk together, fill the season track and stock the vault. The leader pays the salaries.</p></article>
+      <article class="card reveal"><div class="art icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 17.5 3 6V3h3l11.5 11.5M13 19l6-6M16 16l4 4M19 21l2-2"/><path d="M9.5 6.5 21 18v3h-3L6.5 9.5M11 5 5 11M8 8 4 4"/></svg></div><h3>Duels and friends</h3><p>Challenge a friend for 1, 3 or 7 days. Chat, gift items and trade face to face.</p></article>
+      <article class="card reveal"><div class="art icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c1 3 4 4 4 8a4 4 0 0 1-8 0c0-2 1-3 1-3 0 2 1.5 3 1.5 3S9 8 12 3z"/><path d="M8 21h8"/></svg></div><h3>Streaks and quests</h3><p>Daily and weekly quests, a streak with gift days, and a weekly plan that fits your life.</p></article>
+      <article class="card reveal"><div class="art"><img src="img/crown.webp" alt="" width="64" height="64"></div><h3>Seasons and the crown</h3><p>A fresh leaderboard every 30 days. Finish first and the crown is yours.</p></article>
+    </div>
   </section>
 
-  <footer>
-    StepUp · the step competition app
-  </footer>
+  <!-- Clans spotlight -->
+  <section class="block split" id="clans">
+    <div class="reveal">
+      <span class="eyebrow"><span class="dot"></span>New in 0.21</span>
+      <h2>Clans: walk as one</h2>
+      <p class="sub left">Up to ten players. Every step after you join fills the clan's season track. Each milestone drops a chest into the clan vault, and only the leader decides who gets paid.</p>
+      <ul class="ticks">
+        <li>Clan leaderboard: today, this week, this season</li>
+        <li>Open clans or join by request</li>
+        <li>Salaries arrive straight in your inventory</li>
+      </ul>
+    </div>
+    <div class="track-demo reveal" aria-label="A clan season track filling up">
+      <div class="track-head"><img src="img/clan_emblem_4.webp" alt="" width="44" height="44"><div><b>Baltic Striders</b><small>Season track</small></div></div>
+      <div class="track">
+        <div class="line"><span class="line-fill"></span></div>
+        <div class="nodes">
+          <span class="node"><img src="img/chest_common.webp" alt="Common chest" width="44" height="44"><small>50k</small></span>
+          <span class="node"><img src="img/chest_rare.webp" alt="Rare chest" width="44" height="44"><small>175k</small></span>
+          <span class="node"><img src="img/chest_epic.webp" alt="Epic chest" width="44" height="44"><small>500k</small></span>
+          <span class="node"><img src="img/chest_legendary.webp" alt="Legendary chest" width="44" height="44"><small>1.6M</small></span>
+        </div>
+      </div>
+      <div class="vault"><img src="img/clan_vault.webp" alt="" width="56" height="56"><div><b>Clan vault</b><small>The leader pays salaries</small></div></div>
+    </div>
+  </section>
+
+  <!-- Ranks -->
+  <section class="block" id="ranks">
+    <h2 class="reveal">From Iron to Legend</h2>
+    <p class="sub reveal">Ten ranks. Win challenges to climb, miss them and you slide back.</p>
+    <div class="ladder reveal">
+      <figure><img src="img/rank_1.webp" alt="" width="72" height="72"><figcaption>Iron</figcaption></figure>
+      <figure><img src="img/rank_2.webp" alt="" width="72" height="72"><figcaption>Bronze</figcaption></figure>
+      <figure><img src="img/rank_3.webp" alt="" width="72" height="72"><figcaption>Silver</figcaption></figure>
+      <figure><img src="img/rank_4.webp" alt="" width="72" height="72"><figcaption>Gold</figcaption></figure>
+      <figure><img src="img/rank_5.webp" alt="" width="72" height="72"><figcaption>Platinum</figcaption></figure>
+      <figure><img src="img/rank_6.webp" alt="" width="72" height="72"><figcaption>Emerald</figcaption></figure>
+      <figure><img src="img/rank_7.webp" alt="" width="72" height="72"><figcaption>Diamond</figcaption></figure>
+      <figure><img src="img/rank_8.webp" alt="" width="72" height="72"><figcaption>Master</figcaption></figure>
+      <figure><img src="img/rank_9.webp" alt="" width="72" height="72"><figcaption>Grandmaster</figcaption></figure>
+      <figure><img src="img/rank_10.webp" alt="" width="72" height="72"><figcaption>Legend</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- Install -->
+  <section class="block" id="install">
+    <div class="download-panel reveal">
+      <img src="img/ic_launcher_art.webp" alt="" width="88" height="88">
+      <h2>Get StepUp</h2>
+      <p class="sub" id="vername">The latest version for Android</p>
+      <a class="btn btn-lg dl" id="dl" href="#" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+        <span class="dltext">Download for Android</span>
+      </a>
+      <span class="meta"><span class="size">Android 9+ · about 5 MB</span></span>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal"><b>1</b><h3>Download</h3><p>Tap Download and open the file. Allow installs from your browser if asked.</p></div>
+      <div class="step reveal"><b>2</b><h3>Install</h3><p>Play Protect may suggest a scan: tap Scan app or Install without scanning. StepUp is just new to Google.</p></div>
+      <div class="step reveal"><b>3</b><h3>Walk</h3><p>Create your account (one per phone) and allow steps in Health Connect. That's it.</p></div>
+    </div>
+
+    <div class="two">
+      <div class="panel reveal">
+        <h3>Updating</h3>
+        <p>Install the new file over your old StepUp. Your progress lives on your account, nothing is lost. Open the file with the newest version in its name; older StepUp files in Downloads can be deleted.</p>
+        <p class="muted">"App not installed"? Your phone has a very old StepUp (1.5 or older) signed differently. Uninstall it, install the new file and sign in again.</p>
+      </div>
+      <div class="panel reveal" id="notes-box" hidden>
+        <h3 id="notes-title">What's new</h3>
+        <ul class="ticks" id="notes"></ul>
+      </div>
+    </div>
+
+    <!-- Verify -->
+    <div class="panel verify reveal" id="verify">
+      <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>Check that your download is genuine</h3>
+      <p class="muted">Only download StepUp from this page. Every release is signed with the StepUp key; a changed or fake file can't carry that signature and won't install over the real app.</p>
+      <dl>
+        <dt>File SHA-256</dt><dd><code id="sha">published with each release</code><button class="copy" data-copy="sha" type="button">Copy</button></dd>
+        <dt>Signing certificate SHA-256</dt><dd><code id="cert">83:42:20:C7:A9:91:3B:F7:CF:BC:21:94:74:7A:CE:2C:17:46:33:36:41:24:26:E0:58:2B:0A:A5:16:7A:80:10</code><button class="copy" data-copy="cert" type="button">Copy</button></dd>
+      </dl>
+    </div>
+  </section>
 </main>
-<script>
-  // owner.github.io/repo/ → the APK attached to the newest GitHub release of owner/repo.
-  const owner = location.hostname.split('.')[0];
-  const repo = location.pathname.split('/').filter(Boolean)[0] || 'stepup';
-  document.getElementById('dl').href = `https://github.com/${owner}/${repo}/releases/latest/download/StepUp.apk`;
 
-  fetch('version.json', { cache: 'no-store' }).then(r => r.json()).then(v => {
-    document.getElementById('ver').textContent = `Version ${v.versionName} · Android`;
-    document.getElementById('dltext').textContent = `Download StepUp ${v.versionName}`;
-    // The file carries its version in the name, so an old StepUp.apk in Downloads is never opened by mistake.
-    document.getElementById('dl').href = `https://github.com/${owner}/${repo}/releases/download/v${v.versionName}/StepUp-${v.versionName}.apk`;
-    if (v.sizeMb) document.getElementById('size').textContent = `${v.sizeMb} MB`;
-    if (Array.isArray(v.notes) && v.notes.length) {
-      document.getElementById('notes-title').textContent = `What's new in ${v.versionName}`;
-      const ul = document.getElementById('notes');
-      v.notes.forEach(n => { const li = document.createElement('li'); li.textContent = n; ul.appendChild(li); });
-      document.getElementById('notes-box').hidden = false;
-    }
-  }).catch(() => {});
-</script>
+<footer class="foot">
+  <div class="brand"><img src="img/ic_launcher_art.webp" alt="" width="28" height="28"><span>StepUp</span></div>
+  <p>The step competition app. This page sets no cookies and loads nothing from other sites.</p>
+  <p class="muted">© 2026 StepUp · Beta</p>
+</footer>
 </body>
 </html>

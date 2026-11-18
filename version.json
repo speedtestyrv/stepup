@@ -12,5 +12,8 @@
                   "Boosts no longer expire, higher item limits",
                   "One account per phone, strictly: moving to a new phone takes 3 days and the old phone can cancel it; Settings → Delete account frees the phone",
                   "Smoother chest opening reel"
-              ]
+              ],
+    "sha256":  "B1C7947D4371E3FBBEA206D320AB0F6AFC2A433315513087B7FF32D3D77E862F",
+    "cert":  "83:42:20:C7:A9:91:3B:F7:CF:BC:21:94:74:7A:CE:2C:17:46:33:36:41:24:26:E0:58:2B:0A:A5:16:7A:80:10",
+    "apk":  "https://github.com/speedtestyrv/stepup/releases/download/v0.21.0-beta/StepUp-0.21.0-beta.apk"
 }
