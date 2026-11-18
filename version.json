@@ -1,19 +1,14 @@
 {
-    "versionCode":  34,
-    "versionName":  "0.21.0-beta",
+    "versionCode":  35,
+    "versionName":  "0.21.1-beta",
     "sizeMb":  4.7,
     "notes":  [
-                  "Clans instead of teams: up to 10 players under one leader, open or by request (founding a clan unlocks at level 8)",
-                  "Clan season track: your clan\u0027s steps fill a line of milestones, and each one puts a chest into the clan vault",
-                  "Clan vault: the leader pays chests out as salary to the members they choose",
-                  "Clan leaderboard: Ranking → Clans, Today / Week / Season",
-                  "New inventory grid: drag to arrange, tap to open, use or gift",
-                  "Gifts and live trades between players (Ready, then Accept on both sides)",
-                  "Boosts no longer expire, higher item limits",
-                  "One account per phone, strictly: moving to a new phone takes 3 days and the old phone can cancel it; Settings → Delete account frees the phone",
-                  "Smoother chest opening reel"
+                  "Fixed \"This account lives on another phone\" on your own phone: accounts from before 0.21 link to their phone with one tap",
+                  "Fixed \"The server didn\u0027t allow that\" when moving an account or joining a clan",
+                  "Clan steps now follow the server clock, so a wrong phone clock can\u0027t stop them",
+                  "No more flash of the wrong screen when signing in"
               ],
-    "sha256":  "B1C7947D4371E3FBBEA206D320AB0F6AFC2A433315513087B7FF32D3D77E862F",
+    "sha256":  "9BE5256776BF24ADA9D3F4BE7D86C2D95C43FFC9ACEDB83E2DFB2A5160DEA0F9",
     "cert":  "83:42:20:C7:A9:91:3B:F7:CF:BC:21:94:74:7A:CE:2C:17:46:33:36:41:24:26:E0:58:2B:0A:A5:16:7A:80:10",
-    "apk":  "https://github.com/speedtestyrv/stepup/releases/download/v0.21.0-beta/StepUp-0.21.0-beta.apk"
+    "apk":  "https://github.com/speedtestyrv/stepup/releases/download/v0.21.1-beta/StepUp-0.21.1-beta.apk"
 }
