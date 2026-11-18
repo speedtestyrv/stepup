@@ -1,13 +1,16 @@
 {
-    "versionCode":  33,
-    "versionName":  "0.20.1-beta",
-    "sizeMb":  4.5,
+    "versionCode":  34,
+    "versionName":  "0.21.0-beta",
+    "sizeMb":  4.7,
     "notes":  [
-                  "New chest opening: the chest shakes, a reel of rewards spins and slows down on what you won, then the chest bursts open",
-                  "See what\u0027s inside: Inventory → \"What\u0027s inside each chest?\" shows every reward with its chance",
-                  "New chest art (closed and open) and new reward icons",
-                  "New rank emblems",
-                  "Team challenge has its own screen: how it works in 3 steps, everyone\u0027s share of the goal in their own colour, who gets the chest, open seats to invite, and the last 7 days",
-                  "Quiet, soft sounds for the chest reel and opening (turn them off in Settings → Sound effects)"
+                  "Clans instead of teams: up to 10 players under one leader, open or by request (founding a clan unlocks at level 8)",
+                  "Clan season track: your clan\u0027s steps fill a line of milestones, and each one puts a chest into the clan vault",
+                  "Clan vault: the leader pays chests out as salary to the members they choose",
+                  "Clan leaderboard: Ranking → Clans, Today / Week / Season",
+                  "New inventory grid: drag to arrange, tap to open, use or gift",
+                  "Gifts and live trades between players (Ready, then Accept on both sides)",
+                  "Boosts no longer expire, higher item limits",
+                  "One account per phone, strictly: moving to a new phone takes 3 days and the old phone can cancel it; Settings → Delete account frees the phone",
+                  "Smoother chest opening reel"
               ]
 }
