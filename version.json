@@ -1,14 +1,17 @@
 {
-    "versionCode":  35,
-    "versionName":  "0.21.1-beta",
-    "sizeMb":  4.7,
+    "versionCode":  36,
+    "versionName":  "0.22.0-beta",
+    "sizeMb":  4.8,
     "notes":  [
-                  "Fixed \"This account lives on another phone\" on your own phone: accounts from before 0.21 link to their phone with one tap",
-                  "Fixed \"The server didn\u0027t allow that\" when moving an account or joining a clan",
-                  "Clan steps now follow the server clock, so a wrong phone clock can\u0027t stop them",
-                  "No more flash of the wrong screen when signing in"
+                  "Block and report players: open a profile → Block or Report. Blocked players can\u0027t message you or send requests, gifts, trades or duels. Unblock them in Settings",
+                  "Clan leader gone for 14 days? Any member can take the lead, so the vault never gets stuck",
+                  "Today and This week leaderboards are now protected against cheaters, like the season board",
+                  "Nobody can change their name to look like another player",
+                  "Claps in Friends\u0027 activity can\u0027t be removed by others any more",
+                  "Hidden new accounts no longer show on the crown board",
+                  "Old invite-code leftovers removed, and the step counting library updated to its stable version"
               ],
-    "sha256":  "9BE5256776BF24ADA9D3F4BE7D86C2D95C43FFC9ACEDB83E2DFB2A5160DEA0F9",
+    "sha256":  "D52329772CFB7138E00EAA1D39B513072AAF7922D28C7C52A2D741238D298385",
     "cert":  "83:42:20:C7:A9:91:3B:F7:CF:BC:21:94:74:7A:CE:2C:17:46:33:36:41:24:26:E0:58:2B:0A:A5:16:7A:80:10",
-    "apk":  "https://github.com/speedtestyrv/stepup/releases/download/v0.21.1-beta/StepUp-0.21.1-beta.apk"
+    "apk":  "https://github.com/speedtestyrv/stepup/releases/download/v0.22.0-beta/StepUp-0.22.0-beta.apk"
 }
