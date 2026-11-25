@@ -1,17 +1,18 @@
 {
-    "versionCode":  36,
-    "versionName":  "0.22.0-beta",
-    "sizeMb":  4.8,
+    "versionCode":  37,
+    "versionName":  "0.23.0-beta",
+    "sizeMb":  4.9,
     "notes":  [
-                  "Block and report players: open a profile → Block or Report. Blocked players can\u0027t message you or send requests, gifts, trades or duels. Unblock them in Settings",
-                  "Clan leader gone for 14 days? Any member can take the lead, so the vault never gets stuck",
-                  "Today and This week leaderboards are now protected against cheaters, like the season board",
-                  "Nobody can change their name to look like another player",
-                  "Claps in Friends\u0027 activity can\u0027t be removed by others any more",
-                  "Hidden new accounts no longer show on the crown board",
-                  "Old invite-code leftovers removed, and the step counting library updated to its stable version"
+                  "Distance and calories on Home (add your height and weight for better numbers, kept on your phone only)",
+                  "Monday recap: last week\u0027s steps, goal days and the change from the week before, on Home and as a notification",
+                  "Streak reminder at 21:00 when your streak would break tonight (Settings → Streak reminder)",
+                  "News from StepUp shows on Home without a new update",
+                  "Long-press the StepUp icon for shortcuts: Quests, Ranking, Inventory, Plan a walk",
+                  "Phone vibrates when a chest opens",
+                  "Greeting by time of day, longer notifications show in full",
+                  "A player can be reported only once by the same person"
               ],
-    "sha256":  "D52329772CFB7138E00EAA1D39B513072AAF7922D28C7C52A2D741238D298385",
+    "sha256":  "E8A9D5F4B489661780BF718345B8A070CC171F864F09076C776FD2ED5C9DD56E",
     "cert":  "83:42:20:C7:A9:91:3B:F7:CF:BC:21:94:74:7A:CE:2C:17:46:33:36:41:24:26:E0:58:2B:0A:A5:16:7A:80:10",
-    "apk":  "https://github.com/speedtestyrv/stepup/releases/download/v0.22.0-beta/StepUp-0.22.0-beta.apk"
+    "apk":  "https://github.com/speedtestyrv/stepup/releases/download/v0.23.0-beta/StepUp-0.23.0-beta.apk"
 }

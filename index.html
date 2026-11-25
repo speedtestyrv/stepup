@@ -14,7 +14,14 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="StepUp – every step counts">
 <meta property="og:description" content="Ranks, chests, clans and duels for your daily walk. Free for Android.">
-<meta property="og:image" content="icon.png">
+<meta property="og:image" content="https://speedtestyrv.github.io/stepup/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://speedtestyrv.github.io/stepup/">
+<meta property="og:site_name" content="StepUp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://speedtestyrv.github.io/stepup/">
+<link rel="manifest" href="site.webmanifest">
 <link rel="stylesheet" href="style.css">
 <script src="app.js" defer></script>
 </head>
@@ -24,7 +31,7 @@
 <header class="nav" id="nav">
   <a class="brand" href="#top" aria-label="StepUp home"><img src="img/ic_launcher_art.webp" alt="" width="32" height="32"><span>StepUp</span></a>
   <nav class="links" aria-label="Sections">
-    <a href="#features">Features</a><a href="#clans">Clans</a><a href="#ranks">Ranks</a><a href="#install">Install</a>
+    <a href="#features">Features</a><a href="#clans">Clans</a><a href="#ranks">Ranks</a><a href="#install">Install</a><a href="#faq">FAQ</a>
   </nav>
   <a class="btn btn-sm dl" href="#install">Download</a>
 </header>
@@ -96,13 +103,16 @@
       <article class="card reveal"><div class="art icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 17.5 3 6V3h3l11.5 11.5M13 19l6-6M16 16l4 4M19 21l2-2"/><path d="M9.5 6.5 21 18v3h-3L6.5 9.5M11 5 5 11M8 8 4 4"/></svg></div><h3>Duels and friends</h3><p>Challenge a friend for 1, 3 or 7 days. Chat, gift items and trade face to face.</p></article>
       <article class="card reveal"><div class="art icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c1 3 4 4 4 8a4 4 0 0 1-8 0c0-2 1-3 1-3 0 2 1.5 3 1.5 3S9 8 12 3z"/><path d="M8 21h8"/></svg></div><h3>Streaks and quests</h3><p>Daily and weekly quests, a streak with gift days, and a weekly plan that fits your life.</p></article>
       <article class="card reveal"><div class="art"><img src="img/crown.webp" alt="" width="64" height="64"></div><h3>Seasons and the crown</h3><p>A fresh leaderboard every 30 days. Finish first and the crown is yours.</p></article>
+      <article class="card reveal"><div class="art icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16M7 15V9M12 15V5M17 15v-4"/></svg></div><h3>Your week in numbers</h3><p>Distance, calories, a Monday recap and monthly reports. See how far you've really come.</p></article>
+      <article class="card reveal"><div class="art icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></div><h3>Smart reminders</h3><p>A nudge before your streak breaks, plan reminders, and rest and water alerts on long walks.</p></article>
+      <article class="card reveal"><div class="art"><img src="img/item_boost.webp" alt="" width="64" height="64"></div><h3>Gifts and trades</h3><p>Send items to friends or trade face to face: both press Ready, then Accept.</p></article>
     </div>
   </section>
 
   <!-- Clans spotlight -->
   <section class="block split" id="clans">
     <div class="reveal">
-      <span class="eyebrow"><span class="dot"></span>New in 0.21</span>
+      <span class="eyebrow"><span class="dot"></span>Clans</span>
       <h2>Clans: walk as one</h2>
       <p class="sub left">Up to ten players. Every step after you join fills the clan's season track. Each milestone drops a chest into the clan vault, and only the leader decides who gets paid.</p>
       <ul class="ticks">
@@ -155,6 +165,10 @@
         <span class="dltext">Download for Android</span>
       </a>
       <span class="meta"><span class="size">Android 9+ · about 5 MB</span></span>
+      <div class="qr" id="qr">
+        <img src="img/qr.svg" alt="QR code that opens this page" width="132" height="132">
+        <p><b>On a computer?</b> Scan this with your phone's camera to open the page there and download StepUp.</p>
+      </div>
     </div>
 
     <div class="steps">
@@ -185,11 +199,29 @@
       </dl>
     </div>
   </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <h2 class="reveal">Questions</h2>
+    <p class="sub reveal">Short answers to what people ask most.</p>
+    <div class="faq">
+      <details class="reveal"><summary>Is StepUp free?</summary><p>Yes. No ads, no subscriptions, nothing to buy. Everything in the game is earned by walking.</p></details>
+      <details class="reveal"><summary>Which phones does it work on?</summary><p>Android 9 or newer with Health Connect (built into Android 14 and newer, a free app from Google Play on older phones). iPhone is not supported.</p></details>
+      <details class="reveal"><summary>Where do my steps come from?</summary><p>From Health Connect: your phone's own step counter, Google Fit, Samsung Health or a watch that syncs there. Steps typed in by hand don't count. The app has a step-by-step Google Fit guide.</p></details>
+      <details class="reveal"><summary>Why isn't it on Google Play?</summary><p>StepUp is in beta and shared straight from this page. Every file is signed with the StepUp key and its checksum is published here, so you can check it's genuine.</p></details>
+      <details class="reveal"><summary>Play Protect warns me. Is that safe?</summary><p>Google warns about apps it hasn't seen many times yet. Tap <i>Scan app</i> or <i>Install without scanning</i>. Only download StepUp from this page.</p></details>
+      <details class="reveal"><summary>How do I update?</summary><p>When a new version is out, the app tells you and its button brings you here. Install the new file over the old one; your progress is saved on your account.</p></details>
+      <details class="reveal"><summary>I got a new phone. What now?</summary><p>One account works on one phone. On the new phone sign in and tap <i>Move my account</i>: after 3 days it moves over, and your old phone can cancel it. You can move once every 30 days.</p></details>
+      <details class="reveal"><summary>What data does StepUp keep?</summary><p>Your email (for signing in, never shown), username, optional country, city and photo, and your daily step totals and game progress. <a href="privacy.html">Read the privacy page</a>.</p></details>
+      <details class="reveal"><summary>How do I delete my account?</summary><p>In the app: Settings → Delete account. Your profile and progress are removed and the phone is freed.</p></details>
+    </div>
+  </section>
 </main>
 
 <footer class="foot">
   <div class="brand"><img src="img/ic_launcher_art.webp" alt="" width="28" height="28"><span>StepUp</span></div>
   <p>The step competition app. This page sets no cookies and loads nothing from other sites.</p>
+  <p><a href="privacy.html">Privacy</a> · <a href="#faq">FAQ</a> · <a href="#verify">Check your download</a></p>
   <p class="muted">© 2026 StepUp · Beta</p>
 </footer>
 </body>
